@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffefebe7">
+    <!-- 顶部标题栏 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        >
+        <ImageView 
+         android:id="@+id/account_back"
+         android:src="@drawable/back"
+	     android:layout_width="32dip"
+	     android:layout_height="32dip"
+	     android:layout_marginTop="5dp"
+	     android:layout_marginLeft="8dp"
+	      />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/account_manage"
+            android:paddingLeft="100dip"
+            android:gravity="center_vertical"
+            />
+        
+    </LinearLayout>
+    <!-- 用户名、密码-->
+<TableLayout 
+    android:id="@+id/account_table"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <TableRow 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="2.0dip"  
+      android:layout_marginRight="2.0dip"  
+      android:background="@drawable/layout_selector"  
+	  android:clickable="true"    
+      android:paddingBottom="16.0dip"  
+      android:paddingTop="16.0dip" 
+        >
+       <TextView 
+           android:layout_width="100dip"
+           android:layout_height="wrap_content"
+           android:text="@string/login_label_username"
+           android:textColor="@color/black"
+            android:layout_marginLeft="20dip"
+           />
+       <TextView 
+           android:id="@+id/account_user"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=""
+            android:layout_marginLeft="20dip"
+           />
+        
+    </TableRow>
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"  
+        android:layout_marginRight="2.0dip"  
+        android:background="@drawable/layout_selector"  
+		android:clickable="true"    
+        android:paddingBottom="16.0dip"  
+        android:paddingTop="16.0dip" 
+        >
+        <TextView 
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="@string/login_label_password"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dip"
+            />
+        <TextView 
+            android:id="@+id/account_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="textPassword"
+            android:layout_marginLeft="10dip"
+            
+            />
+        
+    </TableRow>
+    <TableRow 
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"  
+        android:layout_marginRight="2.0dip"  
+        android:background="@drawable/layout_selector"  
+		android:clickable="true"    
+        android:paddingBottom="16.0dip"  
+        android:paddingTop="16.0dip" 
+        >
+        <Button 
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_update_pwd"
+            android:text="@string/account_pwd_new"
+            android:background="@drawable/blue_button"
+            />
+        <Button 
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_ok"
+            android:text="@string/ok"
+            android:background="@drawable/blue_button"
+            />
+        
+    </TableRow>
+    
+</TableLayout>  
+<TableLayout 
+    android:id="@+id/account_password_tab"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    >
+    <!-- 输入原密码进行账号确认 -->
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"  
+        android:layout_marginRight="2.0dip"  
+        android:background="@drawable/layout_selector"  
+		android:clickable="true"    
+        android:paddingBottom="16.0dip"  
+        android:paddingTop="16.0dip" 
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_pre"
+            android:textColor="@color/black"
+            />
+        <EditText 
+            android:id="@+id/password_pre"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            />
+        
+    </TableRow>
+    <!-- 输入新密码 -->
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"  
+        android:layout_marginRight="2.0dip"  
+        android:background="@drawable/layout_selector"  
+		android:clickable="true"    
+        android:paddingBottom="16.0dip"  
+        android:paddingTop="16.0dip" 
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_new"
+            android:textColor="@color/black"
+            />
+        <EditText 
+            android:id="@+id/password_new"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            />
+    </TableRow>
+    <!-- 再次输入密码 -->
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"  
+        android:layout_marginRight="2.0dip"  
+        android:background="@drawable/layout_selector"  
+		android:clickable="true"    
+        android:paddingBottom="16.0dip"  
+        android:paddingTop="16.0dip"  
+        >
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_confirm"
+            android:textColor="@color/black"
+            />
+        <EditText 
+            android:id="@+id/password_confirm"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            />
+        
+    </TableRow>
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"  
+        android:layout_marginRight="2.0dip"  
+        android:background="@drawable/layout_selector"  
+		android:clickable="true"    
+        android:paddingBottom="16.0dip"  
+        android:paddingTop="16.0dip"  
+        >
+        <!-- 确认修改 -->
+        <Button 
+            android:id="@+id/update_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_confirm"
+            android:background="@drawable/blue_button"
+            />
+        
+        
+    </TableRow>
+</TableLayout>  
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+     >
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        >
+      <ImageView 
+          android:id="@+id/setting_activity_back"
+          android:src="@drawable/back"
+	      android:layout_width="32dip"
+	      android:layout_height="32dip"
+	      android:layout_marginTop="5dp"
+	      android:layout_marginLeft="8dp"
+	      />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/settings"
+            android:paddingLeft="100dip"
+            android:gravity="center_vertical"
+            />
+        
+    </LinearLayout>
+     <TableLayout  
+         android:id="@+id/seting_activity_table"  
+         android:layout_width="fill_parent"  
+         android:layout_height="wrap_content"  
+         android:shrinkColumns="0"  
+         android:stretchColumns="0" >  
+  		<TableRow  
+            android:id="@+id/setting_serverUrl"  
+            android:layout_width="fill_parent"  
+            android:layout_marginLeft="2.0dip"  
+            android:layout_marginRight="2.0dip"  
+            android:background="@drawable/layout_selector"  
+			android:clickable="true"    
+            android:paddingBottom="16.0dip"  
+            android:paddingTop="16.0dip" 
+            >  
+            <TextView  
+               android:layout_width="wrap_content"  
+               android:layout_height="fill_parent"  
+               android:drawablePadding="10.0dip"  
+               android:includeFontPadding="false"  
+               android:paddingLeft="17.0dip"  
+               android:text="@string/setting_serverUrl"
+               android:textColor="#ff333333"  
+               android:textSize="16.0sp" />  
+  
+           <ImageView  
+               android:layout_width="wrap_content"  
+               android:layout_height="fill_parent"  
+               android:layout_gravity="right"  
+               android:gravity="center_vertical"  
+               android:paddingRight="20.0dip"  
+               android:src="@drawable/ic_arrow" 
+               />  
+                
+            </TableRow> 
+            <View  
+            android:layout_height="1dip"  
+            android:background="#B7B7B7" />  
+           <TableRow  
+            android:id="@+id/setting_per_rows"  
+            android:layout_width="fill_parent"  
+            android:layout_marginLeft="2.0dip"  
+            android:layout_marginRight="2.0dip"  
+            android:background="@drawable/layout_selector"  
+			android:clickable="true"    
+            android:paddingBottom="16.0dip"  
+            android:paddingTop="16.0dip" 
+            >  
+  
+            <TextView  
+               android:layout_width="wrap_content"  
+               android:layout_height="fill_parent"  
+               android:drawablePadding="10.0dip"  
+               android:gravity="center_vertical"  
+               android:includeFontPadding="false"  
+               android:paddingLeft="17.0dip"  
+               android:text="@string/setting_per_rows"
+               android:textColor="#ff333333"  
+               android:textSize="16.0sp" />  
+  
+         	<Spinner 
+	    		android:id="@+id/spinner_per_rows"
+	    		android:layout_width="50dip"
+	    		android:layout_height="30dip"
+	    		/>
+                
+            </TableRow> 
+            <View  
+            android:layout_height="1dip"  
+            android:background="#B7B7B7" /> 
+            <TableRow    
+            android:layout_width="fill_parent"  
+            android:layout_marginLeft="2.0dip"  
+            android:layout_marginRight="2.0dip"  
+            android:background="@drawable/layout_selector"  
+			android:clickable="true"    
+            android:paddingBottom="16.0dip"  
+            android:paddingTop="16.0dip" 
+            >   
+        <Button 
+        android:id="@+id/setting_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/update_confirm"
+        />
+        </TableRow>
+      </TableLayout>  
+    
+</LinearLayout>

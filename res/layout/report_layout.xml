@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    android:overScrollMode="always"
+    >
+   <ScrollView   
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:fadingEdge="none" >
+        <LinearLayout 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content" 
+        android:orientation="vertical" 
+            >
+    <LinearLayout 
+        android:id="@+id/report_head_liner"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:background="#4f5f6f"
+        
+        >
+    <TextView 
+        android:text="@string/alarm_month"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp"
+	    android:textColor="@color/black"
+	   
+        />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:background="#FFE7E7E7"
+        >
+	<TextView 
+	    android:id="@+id/year"
+	    android:text="@string/spinner_year"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="16sp"
+	    android:textColor="@color/black"
+	    />
+	<Spinner 
+	    android:id="@+id/spinner_year"
+	    android:layout_width="80dip"
+	    android:layout_height="50dip"
+	    />
+	<TextView 
+	    android:id="@+id/month"
+	    android:text="@string/spinner_month"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="16sp"
+	    android:textColor="@color/black"
+	    />
+	<Spinner 
+	    android:id="@+id/spinner_month"
+	    android:layout_width="50dip"
+	    android:layout_height="50dip"
+	    
+	    />
+	<Button 
+	    android:id="@+id/btn_report_month"
+	    android:layout_width="100dip"
+	    android:layout_height="50dip"
+	    android:text="@string/search"
+	    android:background="@color/blue"
+	    android:paddingRight="5dip"
+	    />
+	   
+	</LinearLayout>
+	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/month_report_liner"
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+        android:minHeight="300dip"
+        android:orientation="vertical" >
+
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/report_year_liner"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#4f5f6f"
+        >
+        <TextView 
+            android:text="@string/alarm_year"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+	   		android:textColor="@color/black"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFE7E7E7"
+            >
+            <TextView 
+                android:text="@string/spinner_year"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:textSize="16sp"
+	    		android:textColor="@color/black"
+                />
+            <Spinner 
+	    		android:id="@+id/spinner_alarm_year"
+	    		android:layout_width="80dip"
+	    		android:layout_height="50dip"
+	   		 />
+            <Button 
+	    	android:id="@+id/btn_report_year"
+	   	 	android:layout_width="100dip"
+	    	android:layout_height="50dip"
+	    	android:text="@string/search"
+	    	android:background="@color/blue"
+	    	android:paddingRight="5dip"
+	    />
+        </LinearLayout>
+
+    </LinearLayout>
+     <LinearLayout
+        android:id="@+id/year_report_liner"
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+         android:minHeight="300dip"
+        android:orientation="vertical" 
+       >
+
+        
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">播放视频</string>
+    <string name="login_label_username">帐号</string>
+    <string name="login_label_password">密码</string>
+    <string name="login_label_signin">登 录</string>
+    <string name="login_username_hint">	请输入用户名</string>
+    <string name="login_password_hint">	请输入密码</string>
+    <string name="login_register_link">没有帐号？ <a href="#">联系管理员</a></string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">轮胎生产现场视频监控系统</string>
+    
+    <!-- 报警信息列表 -->
+    <string name="alarm_id">编号</string>
+    <string name="cam_id">摄像机</string>
+    <string name="alarm_time">时间</string>
+    <string name="alarm_type">类型</string>
+    <string name="alarm_duration">时长</string>
+    <string name="alarm_location">位置</string>
+    <string name="tv_connect_cam">正在连接摄像头</string>
+    <string name="tv_connect_cam_error">无法连接，请确认摄像头是否可连接。</string>
+    <string name="app_cancle">取消</string>
+    <string name="app_change_user">注销用户</string>
+    <string name="app_exit_user">退出</string>
+    
+    <!-- 设置 -->
+    <string name="settings">设置</string>
+    <string name="my_setting">我的设置</string>
+    <string name="account_manage">账号管理</string>
+    <string name="my_favorite">查看视频</string>
+    <string name="read_record">操作记录</string>
+    <string name="client">客户端</string>
+    <string name="feedback">用户反馈</string>
+    <string name="check_update">检查更新</string>
+    <string name="my_about">新版介绍</string>
+    <string name="new_feedback">新建反馈</string>
+    <string name="submit">提交</string>
+    <string name="account_pwd_new">重设密码</string>
+    <string name="ok">确定</string>
+    <string name="password_pre">请输入原密码</string>
+    <string name="password_new">请输入新密码</string>
+    <string name="password_confirm">请确认新密码</string>
+    <string name="update_confirm">确认修改</string>
+    <string name="setting_serverUrl">服务器地址</string>
+    <string name="setting_per_rows">报警信息每页条数</string>
+    <string name="log_action">操作</string>
+    <string name="log_time">操作时间</string>
+    <string name="saveName">记住用户</string>
+    <!-- 报警统计 -->
+    <string name="spinner_year">年：</string>
+    <string name="spinner_month">月：</string>
+    <string name="alarm_month">月报警查询</string>
+    <string name="alarm_year">年报警查询</string>
+    <string name="search">查询</string>
+    
+    <string name="btn_load">加载</string>
+    <string name="btn_play">播放</string>
+    <string name="btn_pause">暂停</string>
+    
+    
+    <!-- 摄像机列表 -->
+    <string name="cam_list_id">编号</string>
+    <string name="cam_list_ip">IP</string>
+    <string name="cam_list_location">位置</string>
+    <string name="cam_list_function">功能</string>
+</resources>

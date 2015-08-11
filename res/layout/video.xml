@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    android:background="@color/blue"
+    >
+
+<!--程序介绍说明 -->
+
+ <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        >
+      <ImageView 
+          android:id="@+id/video_back"
+          android:src="@drawable/back"
+	      android:layout_width="32dip"
+	      android:layout_height="32dip"
+	      android:layout_marginTop="5dp"
+	      android:layout_marginLeft="8dp"
+	      />
+      <TextView 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent" 
+    	android:text="@string/hello"
+    	android:textSize="20sp"
+    	android:textColor="@color/white"
+    	android:paddingLeft="100dip"
+    	android:gravity="center_vertical"
+    	/>
+        
+    </LinearLayout>
+
+
+<com.vasys.util.CustomVideoView 
+    android:layout_height="0dp" 
+    android:layout_width="fill_parent" 
+    android:layout_weight="5" 
+    android:id="@+id/vv_player"
+    />
+
+<SeekBar 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:id="@+id/sb_progress"
+    />
+
+<!--底部控件布局 -->
+
+
+
+<LinearLayout 
+    android:orientation="horizontal" 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:layout_weight="1">
+
+<Button 
+    android:layout_height="wrap_content" 
+    android:layout_width="0dp" 
+    android:text="@string/btn_load" 
+    android:layout_weight="1" 
+    android:id="@+id/btn_load"
+    />
+
+<Button 
+    android:layout_height="wrap_content" 
+    android:layout_width="0dp" 
+    android:text="@string/btn_play" 
+    android:layout_weight="1" 
+    android:id="@+id/btn_play"
+    />
+
+<Button 
+    android:layout_height="wrap_content" 
+    android:layout_width="0dp" 
+    android:text="@string/btn_pause" 
+    android:layout_weight="1" 
+    android:id="@+id/btn_pause"
+    />
+
+</LinearLayout>
+
+</LinearLayout>

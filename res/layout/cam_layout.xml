@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   	android:background="@color/list_background"
+    tools:ignore="HardcodedText" 
+    android:orientation="vertical"
+     android:weightSum="10"
+    >
+   <RelativeLayout 
+        android:id="@+id/cam_surface_layout"
+         android:layout_width="fill_parent"
+  	 	 android:layout_height="0dp"
+   		 android:background="@drawable/bg_general"
+   		 android:gravity="top"
+   		 android:layout_weight="8"
+        >
+    <SurfaceView
+        android:id="@+id/sf_VideoMonitor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_Loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tv_connect_cam"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="300dp"
+        android:textSize="20sp"
+        android:visibility="visible" 
+        
+        />
+
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="2dip"
+        >
+    <!-- 上拉显示列表 -->
+    <ImageView 
+        android:id="@+id/image_arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:src="@drawable/arrow_up"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:paddingBottom="5dip"
+        />
+    <!-- 下拉隐藏菜单 -->
+    <ImageView 
+        android:id="@+id/image_arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_down"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        />
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/cam_control_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <!-- 打开摄像机列表 -->
+ 	    <com.vasys.fragment.ImageText  
+        android:id="@+id/popwindow_btn"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+        android:layout_weight="0.2" 
+        />  
+       <!-- 截图按钮 -->
+       <com.vasys.fragment.ImageText  
+        android:id="@+id/captureJpeg"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+        android:layout_weight="0.2" 
+        />  
+       
+       <!-- 录像按钮 -->
+        <com.vasys.fragment.ImageText  
+        android:id="@+id/start_record"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"  
+        />  
+       
+       <!-- 打开对讲 -->
+        <com.vasys.fragment.ImageText  
+        android:id="@+id/talk"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+        android:layout_weight="0.2" 
+        />  
+     
+       <!-- 全屏 -->
+       <com.vasys.fragment.ImageText  
+        android:id="@+id/fullscreen"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        />  
+       
+       </LinearLayout>
+  
+</LinearLayout>
